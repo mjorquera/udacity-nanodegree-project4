@@ -19,7 +19,6 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
 }
 /* Make the masthead heading the same height as the navigation */
@@ -35,6 +34,10 @@ body {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+}
+
+.container {
+  margin-bottom: 20px;
 }
 
 .container-narrow > hr {
@@ -62,7 +65,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 1024px;
   }
 
   /* Remove the padding we set earlier */
@@ -80,4 +83,8 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+map {
+  height: 400px;
 }

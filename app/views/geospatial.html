@@ -1,8 +1,13 @@
 <div class="row">
-    <div class="col-sm-12" ng-repeat="office in geospatial.offices">
-        <p>Office Id: <b>{{office.office_id}}</b></p>
-        <p>Latitude: <b>{{office.lat}}</b></p>
-        <p>Longitude: <b>{{office.long}}</b></p>
-        <p>Q Employees: <b>{{office.employee_number}}</b></p>
+    <div class="col-sm-12">
+        <leaflet center="geospatial.mapcenter" markers="geospatial.markers" height="480px" width="1024px"></leaflet>
     </div>
 </div>
+<!--<div class="row">
+    <div class="col-sm-12">
+        <map center="[40.74, -74.18]" zoom="2">
+            <marker position="[{{office.lat}}, {{office.long}}]" ng-repeat="office in geospatial.offices"></marker>
+        </map>
+    </div>
+</div>-->
+
