@@ -10,6 +10,6 @@
 angular.module('corporateDashboardApp')
   .service('issueFinder', function () {
        this.getIssues = function() {
-      return $.get( '/data/issues_data.csv' );
-    };
+         return $.get('/data/issues_data.csv');
+      };
   });

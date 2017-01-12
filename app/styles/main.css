@@ -85,6 +85,36 @@ body {
   }
 }
 
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
 map {
   height: 400px;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+table.table thead .dis:after {
+    position: absolute;
+    font-family: 'Glyphicons Halflings';
+    margin-left: 5px;
+    opacity: 0.2;
+    content: "\e150";
+}
+table.table thead .asc:after {
+    position: absolute;
+    font-family: 'Glyphicons Halflings';
+    margin-left: 5px;
+    opacity: 0.5;
+    content: "\e155";
+}
+table.table thead .des:after {
+    position: absolute;
+    font-family: 'Glyphicons Halflings';
+    margin-left: 5px;
+    opacity: 0.5;
+    content: "\e156";
 }
