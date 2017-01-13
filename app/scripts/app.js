@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('corporateDashboardApp', ['leaflet-directive','ui.router'])
+  .module('corporateDashboardApp', ['leaflet-directive','ui.router','chart.js'])
   .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
     $urlRouterProvider.otherwise('/');
 
