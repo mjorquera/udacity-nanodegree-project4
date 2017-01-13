@@ -1,12 +1,12 @@
 <div class="row">
-    <div class="col-xs-3 text-center">
+    <div class="col-xs-5 text-center">
         <h1><b>{{metrics.open_issues}}</b></h1>
         <h4>Open Issues</h4>
     </div>
-    <div class="col-xs-9" ng-include="'views/line.html'" ng-controller="LinechartCtrl as line">
+    <div class="col-xs-7" ng-include="'views/line.html'" ng-controller="LinechartCtrl as line">
     </div>
 </div>
 <div class="row">
-    <div class="col-xs-12" ng-include="'views/bar.html'" ng-controller="BarchartCtrl as bar">
+    <div class="col-xs-8 col-xs-offset-2" ng-include="'views/bar.html'" ng-controller="BarchartCtrl as bar">
     </div>
 </div>
