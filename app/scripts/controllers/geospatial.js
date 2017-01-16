@@ -8,7 +8,7 @@
  * Controller of the corporateDashboardApp
  */
 angular.module('corporateDashboardApp')
-  .controller('GeospatialCtrl', ['$stateParams', 'officeFinder', function ($stateParams, office) {
+  .controller('GeospatialCtrl', ['$interval', 'officeFinder', function ($interval, office) {
     var vm = this;
 
     vm.mapcenter = {
@@ -41,5 +41,26 @@ angular.module('corporateDashboardApp')
         }});
     });
 
+    $interval(function () {
+        var max = 2000;
+        var min = 1;
+
+        var minLat = -90;
+        var maxLat = 90;
+
+        var minLng = -180;
+        var maxLng = 180;
+
+        $.each(vm.markers, function(key, data){
+          var rndEmployees = Math.floor(Math.random() * (max - min + 1)) + min;
+          var rndLat = Math.floor(Math.random() * (maxLat - minLat + 1)) + minLat;
+          var rndLng = Math.floor(Math.random() * (maxLng - minLng + 1)) + minLng;
+
+          data.message = rndEmployees + " employees.";
+          data.lat = rndLat;
+          data.lng = rndLng; 
+          console.log(rndEmployees);
+        });
+      }, 5000);
 
   }]);
