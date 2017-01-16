@@ -1,0 +1,10 @@
+[{"office_id":1,"lat":17.40,"long":120.78,"employee_number":338},
+{"office_id":2,"lat":11.54,"long":107.80,"employee_number":83},
+{"office_id":3,"lat":15.53,"long":-88.05,"employee_number":273},
+{"office_id":4,"lat":-8.31,"long":115.39,"employee_number":223},
+{"office_id":5,"lat":40.74,"long":-8.54,"employee_number":475},
+{"office_id":6,"lat":30.02,"long":108.40,"employee_number":426},
+{"office_id":7,"lat":-34.61,"long":-68.33,"employee_number":486},
+{"office_id":8,"lat":-8.15,"long":112.48,"employee_number":274},
+{"office_id":9,"lat":-10.08,"long":124.46,"employee_number":397},
+{"office_id":10,"lat":27.08,"long":112.95,"employee_number":389}]
